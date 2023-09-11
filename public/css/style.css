@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(222, 235, 245);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(83, 100, 226);
+  width: 100%;
+  height: 20vh;
+}
+
+.title {
+  margin-top: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.emoji {
+  margin-top: 2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+span {
+  text-decoration: none;
+}
+.inputs_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.inputs {
+  transform: translateY(-50%);
+  border-radius: 20px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.251);
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  padding: 5px;
+  padding: 10px 30px;
+}
+
+.btn {
+  color: white;
+  border: none;
+  background-color: rgb(83, 100, 226);
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: rgb(14, 38, 255);
+  transform: scale(1.03);
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.251);
+  width: 90%;
+}
+
+.card_container:not(:first-child) {
+  margin-top: 20px; /* Adjust the margin value as needed */
+}
+
+.todo_title {
+  margin-left: 30px;
+  width: 30%;
+  font-size: 18px;
+}
+
+.line {
+  height: 40px;
+  background-color: rgba(108, 107, 107, 0.7);
+  width: 2px;
+}
+
+.todo_description {
+  margin-left: 30px;
+  width: 60%;
+  font-size: 15px;
+  color: rgba(53, 50, 50, 0.778);
+}
+
+.delete_btn {
+  margin-right: 30px;
+  width: 10%;
+  background-color: rgb(226, 83, 83);
+}
+
+.delete_btn:hover {
+  background-color: rgb(222, 0, 0);
+}
